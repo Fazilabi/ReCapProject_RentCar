@@ -1,0 +1,31 @@
+﻿using Business.Abstract;
+using DataAccess.Abstract;
+using Entities.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Business.Concrete
+{
+    public class ModelManager : IModelService
+    {
+        IModelDal _modelDal;
+
+        public ModelManager(IModelDal modelDal)
+        {
+            _modelDal = modelDal;
+        }
+
+        public List<Model> GetAll()
+        {
+            return _modelDal.GetAll();
+            
+        }
+
+        public Model GetById(int modelId)
+        {
+            return _modelDal.Get(m => m.ModelId == modelId);
+            
+        }
+    }
+}
