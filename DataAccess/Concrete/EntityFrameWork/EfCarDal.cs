@@ -21,7 +21,7 @@ namespace DataAccess.Concrete.EntityFrameWork
                              join b in carRentContext.Brands
                              on c.BrandId equals b.BrandId
                              select new CarDetailDto { BrandId = c.BrandId, BrandName = b.BrandName,
-                                 Description = c.Descriptions, DailyPrice = c.DailyPrice, Id = c.Id };
+                                 Description = c.Descriptions, DailyPrice = c.DailyPrice, Id = c.CarId };
                 return result.ToList();
 
             }
