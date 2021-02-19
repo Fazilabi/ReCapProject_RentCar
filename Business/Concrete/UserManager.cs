@@ -38,8 +38,8 @@ namespace Business.Concrete
 
         public IDataResult<List<User>> GetAll()
         {
-            _userdal.GetAll();
-            return new SuccessDataResult<List<User>>(Messages.UserListed);
+           
+            return new SuccessDataResult<List<User>>(_userdal.GetAll(), Messages.UserListed);
         }
 
         public IResult Update(User user)

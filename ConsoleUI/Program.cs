@@ -54,6 +54,11 @@ namespace ConsoleUI
 
             // ********************
 
+            foreach (var rental in rentalManager.GetRentalDetails().Data)
+            {
+                Console.WriteLine(rental.BrandName +" - "+rental.CustomerName+" - "+rental.Description+" - "+ rental.RentDate );
+            }
+
 
 
 

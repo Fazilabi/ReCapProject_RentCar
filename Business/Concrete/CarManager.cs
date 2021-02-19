@@ -59,7 +59,8 @@ namespace Business.Concrete
             {
                 return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
             }
-            return new SuccessDataResult<List<CarDetailDto>> (_carDal.GetCarDetails());
+            _carDal.GetCarDetails();
+            return new SuccessDataResult<List<CarDetailDto>> ( Messages.CarDetailListed);
         }
 
         public IDataResult<List<Car>> GetCarsByBrandId(int brandId)
