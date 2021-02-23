@@ -27,7 +27,9 @@ namespace DataAccess.Concrete.EntityFrameWork
                                  BrandName = b.BrandName,
                                  Description = c.Descriptions, 
                                  DailyPrice = c.DailyPrice, 
-                                 Id = c.CarId 
+                                 Id = c.CarId,
+                                 ModelYear = c.ModelYear
+                                 
                              };
                 return new SuccessDataResult<List<CarDetailDto>> (result.ToList());
 

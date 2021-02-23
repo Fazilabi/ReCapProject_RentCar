@@ -43,6 +43,6 @@ namespace Business.Constants
         public static string RentalUpdated = "Rental updated";
         public static string RentalDeleted = "Rental deleted";
 
-        public static string MaintenanceTime = "Cars is loading";
+        public static string MaintenanceTime = "system is loading, maintenance time";
     }
 }

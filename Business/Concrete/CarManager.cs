@@ -55,12 +55,12 @@ namespace Business.Concrete
 
         public IDataResult<List<CarDetailDto>> GetCarDetails()
         {
-            if (DateTime.Now.Hour == 3)
-            {
-                return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
-            }
-            _carDal.GetCarDetails();
-            return new SuccessDataResult<List<CarDetailDto>> ( Messages.CarDetailListed);
+            //if (DateTime.Now.Hour == 3)
+            //{
+            //    return new ErrorDataResult<List<CarDetailDto>>(Messages.MaintenanceTime);
+            //}
+            return _carDal.GetCarDetails();
+            //return new SuccessDataResult<List<CarDetailDto>> ( Messages.CarDetailListed);
         }
 
         public IDataResult<List<Car>> GetCarsByBrandId(int brandId)
