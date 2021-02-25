@@ -19,7 +19,7 @@ namespace WebAPI.Controllers
         {
             _rentalService = rentalService;
         }
-        [HttpGet("add")]
+        [HttpPost("add")]
         public IActionResult AddRental(Rental rental)
         {
             var result = _rentalService.Add(rental);
@@ -30,7 +30,7 @@ namespace WebAPI.Controllers
             return BadRequest(result.Message);
         }
 
-        [HttpGet("update")]
+        [HttpPost("update")]
         public IActionResult UpdateRental(Rental rental)
         {
             var result = _rentalService.Update(rental);
@@ -40,7 +40,7 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result.Message);
         }
-        [HttpGet("delete")]
+        [HttpPost("delete")]
         public IActionResult DeleteRental(Rental rental)
         {
             var result = _rentalService.Delete(rental);

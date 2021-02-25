@@ -17,11 +17,11 @@ namespace DataAccess.Concrete.InMemory
         {
             _cars = new List<Car>
             {
-               new Car{ CarId = 1 , BrandId = 3, ColorId= 2 , ModelYear= "2018", DailyPrice= 100, Descriptions= "Opel econom"  },
-               new Car{ CarId = 2 , BrandId = 1, ColorId= 1 , ModelYear= "2019", DailyPrice= 150, Descriptions= "Renault  econom"  },
-               new Car{ CarId = 3 , BrandId = 2, ColorId= 3 , ModelYear= "2020", DailyPrice= 200, Descriptions= "Mercedes comfort"  },
-               new Car{ CarId = 4 , BrandId = 3, ColorId= 5 , ModelYear= "2019", DailyPrice= 140, Descriptions= "BMW comfort"  },
-               new Car{ CarId = 5 , BrandId = 1, ColorId= 4 , ModelYear= "2020", DailyPrice= 180, Descriptions= "Hyundai econom"  }
+               new Car{ CarId = 1 , BrandId = 3, ColorId= 2 , ModelYear= 2018, DailyPrice= 100, Descriptions= "Opel econom"  },
+               new Car{ CarId = 2 , BrandId = 1, ColorId= 1 , ModelYear= 2019, DailyPrice= 150, Descriptions= "Renault  econom"  },
+               new Car{ CarId = 3 , BrandId = 2, ColorId= 3 , ModelYear= 2020, DailyPrice= 200, Descriptions= "Mercedes comfort"  },
+               new Car{ CarId = 4 , BrandId = 3, ColorId= 5 , ModelYear= 2019, DailyPrice= 140, Descriptions= "BMW comfort"  },
+               new Car{ CarId = 5 , BrandId = 1, ColorId= 4 , ModelYear= 2020, DailyPrice= 180, Descriptions= "Hyundai econom"  }
             };
         }
         
