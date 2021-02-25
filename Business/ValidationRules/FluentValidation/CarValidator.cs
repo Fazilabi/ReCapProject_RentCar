@@ -16,7 +16,7 @@ namespace Business.ValidationRules.FluentValidation
             RuleFor(c => c.ModelYear).GreaterThanOrEqualTo(2000);
             RuleFor(c => c.ModelYear).NotEmpty();
             RuleFor(c => c.BrandId).NotEmpty();
-            RuleFor(c => c.ColorId).NotEmpty();
+            RuleFor(c => c.ColorId).NotEmpty() ;
 
         }
 

@@ -10,7 +10,7 @@ namespace Business.ValidationRules.FluentValidation
     {
         public BrandValidator()
         {
-            RuleFor(b => b.BrandName).MinimumLength(2).WithMessage("Brand name must be min 2 characters");
+            RuleFor(b => b.BrandName).MinimumLength(2).WithMessage("Brand name must be min 2characters");
            
         }
 

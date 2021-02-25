@@ -10,7 +10,7 @@ namespace Business.ValidationRules.FluentValidation
     {
         public ColorValidator()
         {
-            RuleFor(color => color.ColorName).MinimumLength(2);
+            RuleFor(color => color.ColorName).MinimumLength(2).WithMessage("Color name must be min 2 characters");
            
             
         }

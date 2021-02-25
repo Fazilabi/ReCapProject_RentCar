@@ -11,7 +11,7 @@ namespace Business.ValidationRules.FluentValidation
         public CustomerValidator()
         {
             
-            RuleFor(cu => cu.CompanyName).MinimumLength(2);
+            RuleFor(cu => cu.CompanyName).MinimumLength(2).WithMessage("Company name must be min 2 characters"); ;
             RuleFor(cu => cu.UserId).NotEmpty();
         }
     }
